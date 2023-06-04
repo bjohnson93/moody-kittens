@@ -22,7 +22,7 @@ body{
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Darumadrop One', cursive;
 }
 
 header{
@@ -40,6 +40,7 @@ footer{
 
 p{
   margin: .5em 0;
+  font-family: 'Catamaran', sans-serif;
 }
 
 img{
@@ -127,11 +128,12 @@ button.btn-special:hover{
   filter: drop-shadow(var(--shadow));
 }
 
-
 .kitten img{
   filter: drop-shadow(2px 4px 6px #1b1b1b);
   transition: all .35s ease;
+  max-width: 40%;
 }
+
 .kitten.happy img{
   filter: drop-shadow(2px 4px 6px #00ffb3);
 }
