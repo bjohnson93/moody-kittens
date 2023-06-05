@@ -14,7 +14,7 @@ function addKitten(event) {
   let kitten = {
     id: generateId(),
     name: form.name.value,
-    mood: "Tolerant",
+    mood: "tolerant",
     affection: 5,
   }
     if (kittens.find(kitten => kitten.name == form.name.value)) 
@@ -145,16 +145,16 @@ function catnip(id) {
 function setKittenMood(kitten) {
   document.getElementById("kittens").classList.remove(kitten.mood)
   if(kitten.affection >= 6) {
-    kitten.mood = "Happy"
+    kitten.mood = "happy"
   }
   if(kitten.affection <=5){
-    kitten.mood = "Tolerant"
+    kitten.mood = "tolerant"
   }
   if(kitten.affection <= 3) {
-    kitten.mood = "Angry"
+    kitten.mood = "angry"
   }
   if(kitten.affection <= 0) {
-    kitten.mood = "Gone"
+    kitten.mood = "gone"
   }
 
   document.getElementById("kittens").classList.add(kitten.mood)
